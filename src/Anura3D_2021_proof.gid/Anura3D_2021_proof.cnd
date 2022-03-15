@@ -377,7 +377,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -401,7 +401,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -425,7 +425,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -449,7 +449,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -473,7 +473,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -497,7 +497,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -515,7 +515,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -533,7 +533,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -551,7 +551,7 @@ VALUE: 0
 DEPENDENCIES:(0,HIDE,velocity_[m/s]_,0.0)
 DEPENDENCIES:(1,RESTORE,velocity_[m/s]_,specify)
 QUESTION: velocity_[m/s]_
-VALUE: 0.0 
+VALUE: 0.0
 QUESTION: y-direction#CB#(0,1)
 VALUE: 0
 DEPENDENCIES:(0,HIDE,_velocity_[m/s]_,0.0)
@@ -668,7 +668,7 @@ QUESTION: gradientZ_
 VALUE: 0.0
 QUESTION: apply_pressure_on_#CB#(nodes,material_points)
 VALUE: nodes
-END CONDITION 
+END CONDITION
 
 CONDITION: 2D_-_Solid_Traction
 CONDTYPE: over lines
@@ -730,7 +730,7 @@ QUESTION: gradientY_
 VALUE: 0.0
 QUESTION: apply_pressure_on_#CB#(nodes,material_points)
 VALUE: nodes
-END CONDITION 
+END CONDITION
 
 #########################################################
 
@@ -799,36 +799,45 @@ CONDTYPE: over volumes
 CONDMESHTYPE: over elements
 QUESTION: number_of_materials:#CB#(1,2,3,4)
 VALUE: 1
-DEPENDENCIES:(1,HIDE,bodycontact3D_ID,101,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,HIDE,Friction_2_,#CURRENT#,HIDE,Adhesion_2_,#CURRENT#,HIDE,Friction_3_,#CURRENT#,HIDE,Adhesion_3_,#CURRENT#,HIDE,Friction_4_,#CURRENT#,HIDE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,HIDE,Material_2_,#CURRENT#,HIDE,Material_3_,#CURRENT#,HIDE,Material_4_,#CURRENT#)
-DEPENDENCIES:(2,HIDE,bodycontact3D_ID,102,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,RESTORE,Friction_2_,#CURRENT#,RESTORE,Adhesion_2_,#CURRENT#,HIDE,Friction_3_,#CURRENT#,HIDE,Adhesion_3_,#CURRENT#,HIDE,Friction_4_,#CURRENT#,HIDE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,RESTORE,Material_2_,#CURRENT#,HIDE,Material_3_,#CURRENT#,HIDE,Material_4_,#CURRENT#)
-DEPENDENCIES:(3,HIDE,bodycontact3D_ID,103,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,RESTORE,Friction_2_,#CURRENT#,RESTORE,Adhesion_2_,#CURRENT#,RESTORE,Friction_3_,#CURRENT#,RESTORE,Adhesion_3_,#CURRENT#,HIDE,Friction_4_,#CURRENT#,HIDE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,RESTORE,Material_2_,#CURRENT#,RESTORE,Material_3_,#CURRENT#,HIDE,Material_4_,#CURRENT#)
-DEPENDENCIES:(4,HIDE,bodycontact3D_ID,104,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,RESTORE,Friction_2_,#CURRENT#,RESTORE,Adhesion_2_,#CURRENT#,RESTORE,Friction_3_,#CURRENT#,RESTORE,Adhesion_3_,#CURRENT#,RESTORE,Friction_4_,#CURRENT#,RESTORE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,RESTORE,Material_2_,#CURRENT#,RESTORE,Material_3_,#CURRENT#,RESTORE,Material_4_,#CURRENT#)
+DEPENDENCIES:(1,HIDE,bodycontact3D_ID,101,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,HIDE,Friction_2_,#CURRENT#,HIDE,Adhesion_2_,#CURRENT#,HIDE,Friction_3_,#CURRENT#,HIDE,Adhesion_3_,#CURRENT#,HIDE,Friction_4_,#CURRENT#,HIDE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,HIDE,Material_2_,#CURRENT#,HIDE,Material_3_,#CURRENT#,HIDE,Material_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,HIDE,__CONTACTID_2_,#CURRENT#,HIDE,__CONTACTID_3_,#CURRENT#,HIDE,__CONTACTID_4_,#CURRENT#)
+DEPENDENCIES:(2,HIDE,bodycontact3D_ID,102,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,RESTORE,Friction_2_,#CURRENT#,RESTORE,Adhesion_2_,#CURRENT#,HIDE,Friction_3_,#CURRENT#,HIDE,Adhesion_3_,#CURRENT#,HIDE,Friction_4_,#CURRENT#,HIDE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,RESTORE,Material_2_,#CURRENT#,HIDE,Material_3_,#CURRENT#,HIDE,Material_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,RESTORE,__CONTACTID_2_,#CURRENT#,HIDE,__CONTACTID_3_,#CURRENT#,HIDE,__CONTACTID_4_,#CURRENT#)
+DEPENDENCIES:(3,HIDE,bodycontact3D_ID,103,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,RESTORE,Friction_2_,#CURRENT#,RESTORE,Adhesion_2_,#CURRENT#,RESTORE,Friction_3_,#CURRENT#,RESTORE,Adhesion_3_,#CURRENT#,HIDE,Friction_4_,#CURRENT#,HIDE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,RESTORE,Material_2_,#CURRENT#,RESTORE,Material_3_,#CURRENT#,HIDE,Material_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,RESTORE,__CONTACTID_2_,#CURRENT#,RESTORE,__CONTACTID_3_,#CURRENT#,HIDE,__CONTACTID_4_,#CURRENT#)
+DEPENDENCIES:(4,HIDE,bodycontact3D_ID,104,RESTORE,Friction_1_,#CURRENT#,RESTORE,Adhesion_1_,#CURRENT#,RESTORE,Friction_2_,#CURRENT#,RESTORE,Adhesion_2_,#CURRENT#,RESTORE,Friction_3_,#CURRENT#,RESTORE,Adhesion_3_,#CURRENT#,RESTORE,Friction_4_,#CURRENT#,RESTORE,Adhesion_4_,#CURRENT#,RESTORE,Material_1_,#CURRENT#,RESTORE,Material_2_,#CURRENT#,RESTORE,Material_3_,#CURRENT#,RESTORE,Material_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,RESTORE,__CONTACTID_2_,#CURRENT#,RESTORE,__CONTACTID_3_,#CURRENT#,RESTORE,__CONTACTID_4_,#CURRENT#)
 QUESTION: bodycontact3D_ID
 VALUE: 100
+QUESTION: __CONTACTID_1_
+VALUE: asignID
 QUESTION: MATERIAL_1_
 VALUE: name
 QUESTION: friction_1_
 VALUE: 0.0
 QUESTION: adhesion_1_
 VALUE: 0.0
+QUESTION: __CONTACTID_2_
+VALUE: asignID
 QUESTION: MATERIAL_2_
 VALUE: name
 QUESTION: friction_2_
 VALUE: 0.0
 QUESTION: adhesion_2_
 VALUE: 0.0
+QUESTION: __CONTACTID_3_
+VALUE: asignID
 QUESTION: MATERIAL_3_
 VALUE: name
 QUESTION: friction_3_
 VALUE: 0.0
 QUESTION: adhesion_3_
 VALUE: 0.0
+QUESTION: __CONTACTID_4_
+VALUE: asignID
 QUESTION: MATERIAL_4_
 VALUE: name
 QUESTION: friction_4_
 VALUE: 0.0
 QUESTION: adhesion_4_
 VALUE: 0.0
+
 END CONDITION
 
 ## CONDITION: 3D_-_Boundary_contact
@@ -873,36 +882,45 @@ CONDTYPE: over surfaces
 CONDMESHTYPE: over body elements
 QUESTION: number_of_materials:#CB#(1,2,3,4)
 VALUE: 1
-DEPENDENCIES:(1,HIDE,bodycontact2D_ID,101,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,HIDE,__friction_2_,#CURRENT#,HIDE,__adhesion_2_,#CURRENT#,HIDE,__friction_3_,#CURRENT#,HIDE,__adhesion_3_,#CURRENT#,HIDE,__friction_4_,#CURRENT#,HIDE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,HIDE,__MATERIAL_2_,#CURRENT#,HIDE,__MATERIAL_3_,#CURRENT#,HIDE,__MATERIAL_4_,#CURRENT#)
-DEPENDENCIES:(2,HIDE,bodycontact2D_ID,102,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,RESTORE,__friction_2_,#CURRENT#,RESTORE,__adhesion_2_,#CURRENT#,HIDE,__friction_3_,#CURRENT#,HIDE,__adhesion_3_,#CURRENT#,HIDE,__friction_4_,#CURRENT#,HIDE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,RESTORE,__MATERIAL_2_,#CURRENT#,HIDE,__MATERIAL_3_,#CURRENT#,HIDE,__MATERIAL_4_,#CURRENT#)
-DEPENDENCIES:(3,HIDE,bodycontact2D_ID,103,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,RESTORE,__friction_2_,#CURRENT#,RESTORE,__adhesion_2_,#CURRENT#,RESTORE,__friction_3_,#CURRENT#,RESTORE,__adhesion_3_,#CURRENT#,HIDE,__friction_4_,#CURRENT#,HIDE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,RESTORE,__MATERIAL_2_,#CURRENT#,RESTORE,__MATERIAL_3_,#CURRENT#,HIDE,__MATERIAL_4_,#CURRENT#)
-DEPENDENCIES:(4,HIDE,bodycontact2D_ID,104,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,RESTORE,__friction_2_,#CURRENT#,RESTORE,__adhesion_2_,#CURRENT#,RESTORE,__friction_3_,#CURRENT#,RESTORE,__adhesion_3_,#CURRENT#,RESTORE,__friction_4_,#CURRENT#,RESTORE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,RESTORE,__MATERIAL_2_,#CURRENT#,RESTORE,__MATERIAL_3_,#CURRENT#,RESTORE,__MATERIAL_4_,#CURRENT#)
+DEPENDENCIES:(1,HIDE,bodycontact2D_ID,101,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,HIDE,__friction_2_,#CURRENT#,HIDE,__adhesion_2_,#CURRENT#,HIDE,__friction_3_,#CURRENT#,HIDE,__adhesion_3_,#CURRENT#,HIDE,__friction_4_,#CURRENT#,HIDE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,HIDE,__MATERIAL_2_,#CURRENT#,HIDE,__MATERIAL_3_,#CURRENT#,HIDE,__MATERIAL_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,HIDE,__CONTACTID_2_,#CURRENT#,HIDE,__CONTACTID_3_,#CURRENT#,HIDE,__CONTACTID_4_,#CURRENT#)
+DEPENDENCIES:(2,HIDE,bodycontact2D_ID,102,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,RESTORE,__friction_2_,#CURRENT#,RESTORE,__adhesion_2_,#CURRENT#,HIDE,__friction_3_,#CURRENT#,HIDE,__adhesion_3_,#CURRENT#,HIDE,__friction_4_,#CURRENT#,HIDE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,RESTORE,__MATERIAL_2_,#CURRENT#,HIDE,__MATERIAL_3_,#CURRENT#,HIDE,__MATERIAL_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,RESTORE,__CONTACTID_2_,#CURRENT#,HIDE,__CONTACTID_3_,#CURRENT#,HIDE,__CONTACTID_4_,#CURRENT#)
+DEPENDENCIES:(3,HIDE,bodycontact2D_ID,103,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,RESTORE,__friction_2_,#CURRENT#,RESTORE,__adhesion_2_,#CURRENT#,RESTORE,__friction_3_,#CURRENT#,RESTORE,__adhesion_3_,#CURRENT#,HIDE,__friction_4_,#CURRENT#,HIDE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,RESTORE,__MATERIAL_2_,#CURRENT#,RESTORE,__MATERIAL_3_,#CURRENT#,HIDE,__MATERIAL_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,RESTORE,__CONTACTID_2_,#CURRENT#,RESTORE,__CONTACTID_3_,#CURRENT#,HIDE,__CONTACTID_4_,#CURRENT#)
+DEPENDENCIES:(4,HIDE,bodycontact2D_ID,104,RESTORE,__friction_1_,#CURRENT#,RESTORE,__adhesion_1_,#CURRENT#,RESTORE,__friction_2_,#CURRENT#,RESTORE,__adhesion_2_,#CURRENT#,RESTORE,__friction_3_,#CURRENT#,RESTORE,__adhesion_3_,#CURRENT#,RESTORE,__friction_4_,#CURRENT#,RESTORE,__adhesion_4_,#CURRENT#,RESTORE,__MATERIAL_1_,#CURRENT#,RESTORE,__MATERIAL_2_,#CURRENT#,RESTORE,__MATERIAL_3_,#CURRENT#,RESTORE,__MATERIAL_4_,#CURRENT#,RESTORE,__CONTACTID_1_,#CURRENT#,RESTORE,__CONTACTID_2_,#CURRENT#,RESTORE,__CONTACTID_3_,#CURRENT#,RESTORE,__CONTACTID_4_,#CURRENT#)
 QUESTION: bodycontact2D_ID
 VALUE: 100
+QUESTION: __CONTACTID_1_
+VALUE: asignID
 QUESTION: __MATERIAL_1_
 VALUE: name
 QUESTION: __friction_1_
 VALUE: 0.0
 QUESTION: __adhesion_1_
 VALUE: 0.0
+QUESTION: __CONTACTID_2_
+VALUE: asignID
 QUESTION: __MATERIAL_2_
 VALUE: name
 QUESTION: __friction_2_
 VALUE: 0.0
 QUESTION: __adhesion_2_
 VALUE: 0.0
+QUESTION: __CONTACTID_3_
+VALUE: asignID
 QUESTION: __MATERIAL_3_
 VALUE: name
 QUESTION: __friction_3_
 VALUE: 0.0
 QUESTION: __adhesion_3_
 VALUE: 0.0
+QUESTION: __CONTACTID_4_
+VALUE: asignID
 QUESTION: __MATERIAL_4_
 VALUE: name
 QUESTION: __friction_4_
 VALUE: 0.0
 QUESTION: __adhesion_4_
 VALUE: 0.0
+
 END CONDITION
 
 ## CONDITION: 2D_-_Boundary_contact
@@ -960,7 +978,7 @@ QUESTION: last_step_
 VALUE: 0
 QUESTION: in_which_the_selected_#CB#(area_is_excavated)
 VALUE: area is excavated
-END CONDITION 
+END CONDITION
 
 CONDITION: 2D_-_Solid_Excavation
 CONDTYPE: over surfaces
@@ -976,7 +994,7 @@ QUESTION: _last_step_
 VALUE: 0
 QUESTION: in_which_the_selected_#CB#(area_is_excavated)
 VALUE: area is excavated
-END CONDITION 
+END CONDITION
 
 #########################################################
 
@@ -986,15 +1004,15 @@ CONDITION: 3D_-_Reaction_Forces
 CONDTYPE: over surfaces
 CONDMESHTYPE: over face elements
 QUESTION: surface_identifier_
-VALUE: 
-END CONDITION 
+VALUE:
+END CONDITION
 
 CONDITION: 2D_-_Reaction_Forces
 CONDTYPE: over lines
 CONDMESHTYPE: over face elements
 QUESTION: line_identifier_
-VALUE: 
-END CONDITION 
+VALUE:
+END CONDITION
 
 #########################################################
 
@@ -1210,7 +1228,7 @@ CONDITION: Moving_Mesh
 CONDTYPE: over points
 CONDMESHTYPE: over nodes
 QUESTION: moving_mesh_direction:#CB#(please_choose,x-direction,y-direction,z-direction)
-VALUE: 
+VALUE:
 QUESTION: assign_corner_nodes_of#CB#(moving_mesh)
 VALUE: moving mesh
 END CONDITION
@@ -1247,7 +1265,7 @@ QUESTION: last_step_
 VALUE: 0
 QUESTION: in_which_the_selected_#CB#(area_is_constructed)
 VALUE: area is constructed
-END CONDITION 
+END CONDITION
 
 CONDITION: 2D_-_Solid_Construction
 CONDTYPE: over surfaces
@@ -1263,6 +1281,6 @@ QUESTION: _last_step_
 VALUE: 0
 QUESTION: in_which_the_selected_#CB#(area_is_constructed)
 VALUE: area is constructed
-END CONDITION 
+END CONDITION
 
 #########################################################

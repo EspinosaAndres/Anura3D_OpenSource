@@ -1,4 +1,4 @@
-### Anura3D_2021 ###	
+### Anura3D_2021 ###
 *############################################
 *##### dimension                        #####
 *############################################
@@ -442,7 +442,7 @@ $$START_REMOVE_FIXITY_POINT_GAS
 *end nodes
 *############################################
 *##### prescribed velocities 2D/3D      #####
-*#####   (only written when specified)  ##### 
+*#####   (only written when specified)  #####
 *############################################
 *##### 2D case
 *if(ndime==2)
@@ -560,7 +560,7 @@ $$PRESCRIBED_NODAL_VELOCITY_POINT
 *end if
 *############################################
 *##### initial conditions 2D/3D         #####
-*#####   (only written when specified)  ##### 
+*#####   (only written when specified)  #####
 *############################################
 *##### 2D case
 *if(ndime==2)
@@ -779,7 +779,7 @@ $$START_LOAD_ON_NODES_SOLID
 *end if
 *end elems
 *end if
-*##### 3D traction load material points 
+*##### 3D traction load material points
 *if(ndime==3)
 *set Cond 3D_-_Solid_Traction *elems *CanRepeat
 *set var J=0
@@ -1212,7 +1212,7 @@ $$START_LOAD_ON_MATERIAL_POINTS_LIQUID
 *if(nnode==6)
 *GlobalNodes *pp1 *pp1 *pp2 *pp2 *pp3 *pp3
 *elseif(nnode==3)
-*GlobalNodes *pp1 *pp1 *pp2 *pp2 
+*GlobalNodes *pp1 *pp1 *pp2 *pp2
 *end if
 *end if
 *end if
@@ -1222,7 +1222,7 @@ $$START_LOAD_ON_MATERIAL_POINTS_LIQUID
 *##### contact properties               #####
 *############################################
 *if(ndime==3)
-*# *##### 3D boundary contact 
+*# *##### 3D boundary contact
 *# $$START_CONTACT_SURFACE
 *# *set Cond 3D_-_Boundary_contact *elems *CanRepeat
 *# *set var J=0
@@ -1241,10 +1241,10 @@ $$START_LOAD_ON_MATERIAL_POINTS_LIQUID
 *# *GlobalNodes *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "NAN" 0.0 0.0
 *# *end if
 *# *if((cond(1,int)==4))
-*# *GlobalNodes *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) 
+*# *GlobalNodes *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real)
 *# *end if
 *# *end elems
-*##### 3D body contact 
+*##### 3D body contact
 $$START_CONTACT_VOLUME
 *set Cond 3D_-_Body_contact *elems *CanRepeat
 *set var J=0
@@ -1254,21 +1254,21 @@ $$START_CONTACT_VOLUME
 *J
 *loop elems *OnlyInCond
 *if((cond(1,int)==1))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0 "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==2))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==3))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==4))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) 
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) *cond(15,real) "*cond(16)" *cond(17,real) *cond(18,real)
 *end if
 *end elems
 *end if
 *if(ndime==2)
-*##### 2D body contact 
+*##### 2D body contact
 *set Cond 2D_-_Body_contact *elems *CanRepeat
 *set var nBodyContact2D=0
 *loop elems *OnlyInCond
@@ -1280,16 +1280,16 @@ $$START_BODY_CONTACT_2D
 *end if
 *loop elems *OnlyInCond
 *if((cond(1,int)==1))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0 "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==2))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==3))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==4))
-*elemsnum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) 
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) *cond(15,real) "*cond(16)" *cond(17,real) *cond(18,real)
 *end if
 *end elems
 *# *##### 2D boundary contact
@@ -1313,14 +1313,14 @@ $$START_BODY_CONTACT_2D
 *# *NodesNum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "NAN" 0.0 0.0
 *# *end if
 *# *if((cond(1,int)==4))
-*# *NodesNum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) 
+*# *NodesNum *cond(1,int) "*cond(3)" *cond(4,real) *cond(5,real) "*cond(6)" *cond(7,real) *cond(8,real) "*cond(9)" *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real)
 *# *end if
 *# *end nodes
 *end if
 *############################################
 *##### excavation properties            #####
 *############################################
-*set cond 3D_-_Solid_Excavation *elems 
+*set cond 3D_-_Solid_Excavation *elems
 *set var nExcavation=0
 *loop elems *OnlyInCond
 *set var nExcavation=operation(nExcavation+1)
@@ -1331,7 +1331,7 @@ $$START_EXCAVATION_SOLID
 *loop elems *OnlyInCond
 *cond(2) *elemsnum
 *end elems
-*set cond 2D_-_Solid_Excavation *elems 
+*set cond 2D_-_Solid_Excavation *elems
 *set var nExcavation2D=0
 *loop elems *OnlyInCond
 *set var nExcavation2D=operation(nExcavation2D+1)
@@ -1344,11 +1344,11 @@ $$START_EXCAVATION_SOLID
 *end elems
 *############################################
 *##### output reaction forces 2D/3D     #####
-*#####   (only written when specified)  ##### 
+*#####   (only written when specified)  #####
 *############################################
 *##### 2D case
 *if(ndime==2)
-*set cond 2D_-_Reaction_Forces *elems 
+*set cond 2D_-_Reaction_Forces *elems
 *set var nReactionForces=0
 *loop elems *OnlyInCond
 *set var nReactionForces=operation(nReactionForces+1)
@@ -1357,7 +1357,7 @@ $$START_EXCAVATION_SOLID
 $$START_OUTPUT_REACTION_FORCES
 *nReactionForces
 *loop elems *OnlyInCond
-"*cond(1)" *elemsnum *GlobalNodes 
+"*cond(1)" *elemsnum *GlobalNodes
 *end elems
 *end if
 *end if
@@ -1378,7 +1378,7 @@ $$START_OUTPUT_REACTION_FORCES
 *end if
 *############################################
 *##### absorbing boundaries 2D/3D       #####
-*#####   (only written when specified)  ##### 
+*#####   (only written when specified)  #####
 *############################################
 *set var IsAbsorbingBoundary=0
 *##### surface conditions
@@ -1451,7 +1451,7 @@ $$ABSORBING_BOUNDARY_REFERENCE_MATERIAL_INDEX
 *loop elems *OnlyInCond
 *set var I=operation(I+1)
 *if(I==1)
-*ElemsMat 
+*ElemsMat
 *end if
 *end elems
 *if((I==0))
@@ -1508,7 +1508,7 @@ $$MOVING_MESH_DIRECTION
 *end if
 *end nodes
 *end if
-*##### reference material 
+*##### reference material
 *if(MM==1)
 *set var I=0
 $$MOVING_MESH_REFERENCE_MATERIAL_INDEX
@@ -1517,7 +1517,7 @@ $$MOVING_MESH_REFERENCE_MATERIAL_INDEX
 *loop elems *OnlyInCond
 *set var I=operation(I+1)
 *if(I==1)
-*ElemsMat 
+*ElemsMat
 *end if
 *end elems
 *##### 3D case
@@ -1525,7 +1525,7 @@ $$MOVING_MESH_REFERENCE_MATERIAL_INDEX
 *loop elems *OnlyInCond
 *set var I=operation(I+1)
 *if(I==1)
-*ElemsMat 
+*ElemsMat
 *end if
 *end elems
 *if(I==0)
@@ -1554,7 +1554,7 @@ $$MATERIAL_TYPE
 dry_material
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$K0_VALUE_SOLID
 *MatProp(K0-value_)
@@ -1565,7 +1565,7 @@ $$MATERIAL_TYPE
 saturated_material_drained
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$DENSITY_LIQUID
 *MatProp(density_liquid_)
@@ -1578,7 +1578,7 @@ $$MATERIAL_TYPE
 saturated_material_undrained_effective
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$DENSITY_LIQUID
 *MatProp(density_liquid_)
@@ -1591,7 +1591,7 @@ $$MATERIAL_TYPE
 saturated_material_undrained_total
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$DENSITY_LIQUID
 *MatProp(density_liquid_)
@@ -1604,7 +1604,7 @@ $$MATERIAL_TYPE
 saturated_material_coupled
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$DENSITY_LIQUID
 *MatProp(density_liquid_)
@@ -1642,7 +1642,7 @@ $$MATERIAL_TYPE
 unsaturated_material_2phase_suction
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$DENSITY_LIQUID
 *MatProp(density_liquid_)
@@ -1661,7 +1661,7 @@ $$MATERIAL_TYPE
 unsaturated_material_3phase_coupled
 $$POROSITY_SOLID
 *MatProp(initial_porosity_)
-$$DENSITY_SOLID 
+$$DENSITY_SOLID
 *MatProp(density_solid_)
 $$DENSITY_LIQUID
 *MatProp(density_liquid_)
@@ -1932,7 +1932,7 @@ $$INITIAL_STATE_VARIABLE_SOLID_49
 $$INITIAL_STATE_VARIABLE_SOLID_50
 *MatProp(initial_state_variable_solid_50_)
 *endif
-*endif 
+*endif
 *########## material model: saturated_material_undrained_total ##########
 *if(MatProp(materialtype_id,int)==204)
 *if(MatProp(total_id,int)==400)
@@ -2414,7 +2414,7 @@ $$INITIAL_STATE_VARIABLE_SOLID_49
 $$INITIAL_STATE_VARIABLE_SOLID_50
 *MatProp(initial_state_variable_solid_50_)
 *endif
-*endif 
+*endif
 *########## material model: liquid ##########
 *if(MatProp(materialtype_id,int)==206)
 *if(MatProp(liquid_id,int)==300)
@@ -2504,16 +2504,16 @@ $$L
 *############################################
 $$STARTELMMAT
 *loop elems
-*ElemsMat 
+*ElemsMat
 *end elems
 *############################################
 *##### element local damping 2D/3D      #####
-*#####   (only written when specified)  ##### 
+*#####   (only written when specified)  #####
 *############################################
 *##### 2D case
 *set var IsLocalDamping2D=0
 *if(ndime==2)
-*set Cond 2D_-_Local_damping_per_surface_entity *elems 
+*set Cond 2D_-_Local_damping_per_surface_entity *elems
 *loop elems *OnlyInCond
 *set var IsLocalDamping2D=1
 *end elems
@@ -2525,7 +2525,7 @@ $$STARTDAMPING
 *##### 3D case
 *set var IsLocalDamping3D=0
 *if(ndime==3)
-*set Cond 3D_-_Local_damping_per_volume_entity *elems 
+*set Cond 3D_-_Local_damping_per_volume_entity *elems
 *loop elems *OnlyInCond
 *set var IsLocalDamping3D=1
 *end elems
@@ -2539,7 +2539,7 @@ $$STARTDAMPING
 *#####   (always specified and written)       #####
 *##################################################
 $$START_NUMBER_OF_MATERIAL_POINTS
-*##### 2D case 
+*##### 2D case
 *if(ndime==2)
 *##### single-point
 *set Cond 2D_-_Single-point_formulation *elems
@@ -2560,7 +2560,7 @@ $$START_NUMBER_OF_MATERIAL_POINTS
 *tcl(Anura3D::WriteNumberOfMaterialPointsDP 2D_-_Double-point_formulation)
 *end if
 *end if
-*##### 3D case 
+*##### 3D case
 *if(ndime==3)
 *##### single-point
 *set Cond 3D_-_Single-point_formulation *elems
