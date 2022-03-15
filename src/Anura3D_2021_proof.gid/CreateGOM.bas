@@ -1257,13 +1257,13 @@ $$START_CONTACT_VOLUME
 *cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==2))
-*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "*cond(7)" *cond(8,real) *cond(9,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==3))
-*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "*cond(7)" *cond(8,real) *cond(9,real) "*cond(10)" *cond(11,real) *cond(12,real) "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==4))
-*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) *cond(15,real) "*cond(16)" *cond(17,real) *cond(18,real)
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "*cond(7)" *cond(8,real) *cond(9,real) "*cond(10)" *cond(11,real) *cond(12,real) "*cond(13)" *cond(14,real) *cond(15,real)
 *end if
 *end elems
 *end if
@@ -1283,13 +1283,13 @@ $$START_BODY_CONTACT_2D
 *cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==2))
-*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "*cond(7)" *cond(8,real) *cond(9,real) "NAN" 0.0 0.0 "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==3))
-*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) "NAN" 0.0 0.0
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "*cond(7)" *cond(8,real) *cond(9,real) "*cond(10)" *cond(11,real) *cond(12,real) "NAN" 0.0 0.0
 *end if
 *if((cond(1,int)==4))
-*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) *cond(7,real) "*cond(8)" *cond(9,real) *cond(10,real) *cond(11,real) "*cond(12)" *cond(13,real) *cond(14,real) *cond(15,real) "*cond(16)" *cond(17,real) *cond(18,real)
+*cond(3,int) *elemsnum *cond(1,int) "*cond(4)" *cond(5,real) *cond(6,real) "*cond(7)" *cond(8,real) *cond(9,real) "*cond(10)" *cond(11,real) *cond(12,real) "*cond(13)" *cond(14,real) *cond(15,real)
 *end if
 *end elems
 *# *##### 2D boundary contact
