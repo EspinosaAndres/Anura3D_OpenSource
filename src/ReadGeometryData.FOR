@@ -95,6 +95,9 @@
           
           character(len=255), allocatable :: &
               ContactMaterials(:,:) 
+          
+          character(len=255), allocatable :: &
+              ContactMaterials_lset(:,:) 
 
           logical :: &
               ApplyAbsorbingBoundary, & ! absorbing boundaries
@@ -644,6 +647,7 @@
           if(allocated(GeoParams%ContactLocation)) deallocate(GeoParams%ContactLocation, stat = IError)
           if(allocated(GeoParams%ContactProperties)) deallocate(GeoParams%ContactProperties, stat = IError)
           if(allocated(GeoParams%ContactMaterials)) deallocate(GeoParams%ContactMaterials, stat = IError)
+          if(allocated(GeoParams%ContactMaterials_lset)) deallocate(GeoParams%ContactMaterials_lset, stat = IError)
 
         end subroutine DeallocateContactArrays 
         
@@ -664,10 +668,12 @@
           allocate(GeoParams%ContactLocation(ArraySize,2), stat=IError)
           allocate(GeoParams%ContactProperties(ArraySize,8), stat=IError)
           allocate(GeoParams%ContactMaterials(ArraySize,4), stat=IError)
+          allocate(GeoParams%ContactMaterials_lset(ArraySize,4), stat=IError)
 
           GeoParams%ContactLocation = 0
           GeoParams%ContactProperties = 0.0
           GeoParams%ContactMaterials = 'undefined'
+          GeoParams%ContactMaterials_lset = 'undefined'
                 
         end subroutine AllocateAndInitialiseContactArrays  
         
